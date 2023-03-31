@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Asessment</string>
+    <string name="judul">Aplikasi ini adalah untuk menghitung luas persegi panjang “Inputkan panjang dan lebar untuk menemukan luas dari persegi panjang”</string>
+    <string name="panjang">Panjang (cm)</string>
+    <string name="lebar">Lebar (cm)</string>
+    <string name="hitung">HITUNG</string>
+    <string name="panjang_persegiPanjang">Panjang (cm)</string>
+    <string name="lebar_PersegiPanjang">Lebar (cm)</string>
+    <string name="panjang_invalid">Panjang tidak boleh kosong.</string>
+    <string name="lebar_invalid">Tinggi tidak boleh kosong.</string>
+    <string name="luas_x">Luas = %d cm</string>
+</resources>
