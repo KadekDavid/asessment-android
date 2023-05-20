@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Asessment</string>
-    <string name="judul">Aplikasi ini adalah untuk menghitung luas dan keliling persegi panjang “Inputkan panjang dan lebar untuk menemukan luas dan keliling dari persegi panjang”</string>
+    <string name="judul">Aplikasi Hitung Persegi Panjang</string>
     <string name="panjang">Panjang (cm)</string>
     <string name="lebar">Lebar (cm)</string>
     <string name="hitung">HITUNG</string>
@@ -8,10 +8,28 @@
     <string name="lebar_PersegiPanjang">Lebar (cm)</string>
     <string name="panjang_invalid">Panjang tidak boleh kosong.</string>
     <string name="lebar_invalid">Tinggi tidak boleh kosong.</string>
-    <string name="luas_x">Luas = %d cm</string>
-    <string name="keliling_x">Keliling = %d cm</string>
+    <string name="luas_x">Luas : %d cm</string>
+    <string name="keliling_x">Keliling : %d cm</string>
     <string name="persegiPanjang">Persegi Panjang</string>
     <string name="persegi">Persegi</string>
     <string name="jajarGenjang">Jajar Genjang</string>
     <string name="luas">LUAS</string>
+    <string name="penjelasan">Penjelasan Hitung Persegi Panjang</string>
+    <string name="penjesan_luas">Luas  = panjang x lebar</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="judul_tentang">Aplikasi Hitung Persegi Panjang</string>
+    <string name="copyright">Aplikasi ini adalah untuk menghitung luas dan keliling persegi panjang “Inputkan panjang dan lebar untuk menemukan luas dan keliling dari persegi panjang.\n\nAplikasi ini dibuat untuk Asessment 2. Temukan kodenya di https://github.com/KadekDavid/asessment1-\n\nCopyright © 2023 Kadek David Kurniawan.\nAll rights reserved.</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="bagikan_template">Panjang : %1$s cm\n Lebar : %2$s cm\n Luas : %3$s cm\nKeliling : %4$s cm</string>
+    <string name="rumus">Rumus Persegi Panjang</string>
+    <string name="rumus_luas">Luas = Panjang x Lebar\n\nKeliling = 2 x (Panjang + Lebar)</string>
+    <string name="rumuss">Rumus</string>
+    <string name="belum_ada_data">Belum ada data</string>
+    <string name="histori">Histori</string>
+    <string name="hasil_x">Luas: %d cm - Keliling: %d cm</string>
+    <string name="data_x">Panjang: %d cm - Lebar: %d cm</string>
+    <string name="hapus_histori">Hapus Histori</string>
+    <string name="konfirmasi_hapus">Hapus semua histori?</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
 </resources>
