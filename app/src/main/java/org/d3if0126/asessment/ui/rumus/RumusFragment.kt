@@ -1,11 +1,18 @@
 package org.d3if0126.asessment.ui.rumus
 
+
+import android.Manifest
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.view.*
+import androidx.annotation.RequiresApi
+import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
+import org.d3if0126.asessment.MainActivity
 import org.d3if0126.asessment.R
 import org.d3if0126.asessment.databinding.FragmentRumusBinding
 import org.d3if0126.asessment.network.ApiStatus
@@ -39,6 +46,7 @@ class RumusFragment : Fragment() {
         viewModel.getStatus().observe(viewLifecycleOwner) {
             updateProgress(it)
         }
+        viewModel.scheduleUpdater(requireActivity().application)
 
     }
 
@@ -63,11 +71,29 @@ class RumusFragment : Fragment() {
             }
             ApiStatus.SUCCES -> {
                 binding.progressBar.visibility = View.GONE
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    requestNotificationPermission()
+                }
             }
             ApiStatus.FAILED -> {
                 binding.progressBar.visibility = View.GONE
                 binding.networkError.visibility = View.VISIBLE
             }
+        }
+    }
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
+    private fun requestNotificationPermission() {
+        if (ActivityCompat.checkSelfPermission(
+                requireContext(),
+                Manifest.permission.POST_NOTIFICATIONS
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(
+                requireActivity(),
+                arrayOf(Manifest.permission.POST_NOTIFICATIONS),
+                MainActivity.PERMISSION_REQUEST_CODE
+            )
         }
     }
 }
