@@ -17,6 +17,9 @@
         <action
             android:id="@+id/action_hitungFragment_to_historiFragment"
             app:destination="@id/historiFragment" />
+        <action
+            android:id="@+id/action_hitungFragment_to_rumusFragment"
+            app:destination="@id/rumusFragment" />
 
     </fragment>
 
@@ -31,4 +34,8 @@
         android:name="org.d3if0126.asessment.ui.histori.HistoriFragment"
         android:label="@string/histori"
         tools:layout="@layout/histori_fragment" />
+    <fragment
+        android:id="@+id/rumusFragment"
+        android:name="org.d3if0126.asessment.ui.rumus.RumusFragment"
+        android:label="RumusFragment" />
 </navigation>

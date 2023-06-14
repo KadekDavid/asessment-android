@@ -48,6 +48,12 @@ class HitungFragment : Fragment() {
                 )
                 return true
             }
+            R.id.menu_rumus -> {
+                findNavController().navigate(
+                    R.id.action_hitungFragment_to_rumusFragment
+                )
+                return true
+            }
     }
         return super.onOptionsItemSelected(item) }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
