@@ -40,6 +40,6 @@
     <string name="channel_desc">Update data hewan otomatis</string>
     <string name="message">%1$s diklik!</string>
     <string name="koneksi_error">Koneksi error</string>
-    <string name="notif_title">Ada hewan baru!</string>
-    <string name="notif_text">Cek sekarang biar nggak penasaran..</string>
+    <string name="notif_title">Sudah lama ngga masuk nih!</string>
+    <string name="notif_text">Ayo hitung persegi panjang...</string>
 </resources>
